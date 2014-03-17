@@ -1,0 +1,125 @@
+body
+{
+	background-color: #222
+}
+
+
+header
+{
+	display: none;
+	background: url(images/head.jpg) repeat-x;
+	height: 400px;
+	-webkit-animation: movebackground 15s infinite linear;
+	border-top: 10px solid #ba2d14;
+	border-bottom: 10px solid #ba2d14;
+	
+}
+
+#h1
+{
+	position: absolute;
+	font-size: 60px;
+	top: 80px;
+	color: #ba2d14;
+	-webkit-animation: fly 1s infinite linear alternate;
+}
+
+#h2
+{
+	position: absolute;
+	font-size: 60px;
+	top: 150px;
+	color: #ba2d14;
+	-webkit-animation: fly1 1s infinite linear alternate;
+}
+
+#angryman
+{
+	position: absolute;
+	top: 10px;
+	height: 250px;
+	width: 250px;
+	-webkit-animation: shake 0.1s infinite linear alternate;
+}
+
+#angryman1
+{
+	position: absolute;
+	top: 10px;
+	height: 250px;
+	width: 250px;
+	-webkit-animation: shake1 0.1s infinite linear alternate;
+}
+
+#angryman2
+{
+	position: absolute;
+	top: 220px;
+	height: 250px;
+	width: 250px;
+	-webkit-animation: shake 0.5s infinite linear alternate;
+}
+
+#angryman3
+{
+	position: absolute;
+	top: 220px;
+	height: 250px;
+	width: 250px;
+	-webkit-animation: shake1 0.5s infinite linear alternate;
+}
+
+button
+{
+	position: absolute;
+	top: 500px;
+	left: 770px;
+}
+
+@-webkit-keyframes movebackground 
+{
+	0%   { background-position: 0 0; }
+	100% { background-position: -512px 0; }
+}
+
+@-webkit-keyframes fly
+{
+	0%   { left: 0px;  }
+	100% { left: 1100px; }
+}	
+
+@-webkit-keyframes fly1
+{
+	100%   { left: 0px;  }
+	0% { left: 1100px; }
+}
+
+@-webkit-keyframes shake
+{
+	0%   { left: 0px; }
+	10%  { left: 65px;   top: 150px; }
+	20%  { left: 45px;   top: -30px; }
+	30%  { left: 565px;  top: 90px;  }
+	40%  { left: 805px;  top: 140px; }
+	50%  { left: 755px;  top: 180px; }
+	60%  { left: 805px;  top: 30px;  }
+	70%  { left: 1005px; top: 60px;  }
+	80%  { left: 1355px; top: 100px; }
+	90%  { left: 1115px; top: 20px;  }
+	100% { left: 1505px;   top: 160px; }
+}
+
+@-webkit-keyframes shake1
+{
+	0%   { left: 1500px; }
+	10%  { left: 565px;   top: 150px; }
+	20%  { left: 545px;   top: -30px; }
+	30%  { left: 265px;  top: 90px;  }
+	40%  { left: 05px;  top: 140px; }
+	50%  { left: 355px;  top: 180px; }
+	60%  { left: 605px;  top: 30px;  }
+	70%  { left: 105px; top: 60px;  }
+	80%  { left: 55px; top: 100px; }
+	90%  { left: 215px; top: 20px;  }
+	100% { left: 05px;   top: 160px; }
+}
