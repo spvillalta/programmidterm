@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type='text/css'>
+
+body
+{
+width:762px;
+margin-left:auto;
+margin-right:auto;
+font-family:arial;
+font-size:12px;
+}
+
+#heading
+{
+background-color:#c0c0ff;
+margin:0px;
+font-family:verdana;
+font-size:24px;
+}
+
+#subhead
+{
+background-color:#f0f0f0;
+margin:0px;
+font-family:arial;
+font-size:16px;
+margin-top:-16px;
+}
+
+img
+{
+float:right;
+margin-top:25px;
+box-shadow: 10px 10px 5px #888888;
+}
+
+input
+{
+width:250px;
+}
+
+.linebreak
+{
+border-bottom:3px solid black;
+}
+
+footer
+{
+text-align:center;
+background-color:#c0c0c0;
+padding;10px;
+font-weight:bold;
+font-family:arial;
+height:35px;
+margin-top:20px;
+}
+
+#form
+{
+width:600px;
+margin-left:80px
+}
+
+</style>
+</head>
+<body>
+
+<h1 id='heading'>Professional Business Associates<h1>
+
+<h2 id='subhead'>Technical Support Request</h2>
+
+<img src='images/techsupport.gif' title='Technical Support' width='400' height='200'>
+
+<p>Thank you for visiting the Technical Support Request page. 
+</br>
+From here you will be able to submit a trouble ticket to 
+</br>
+the support staff. When submitting a ticket, please make sure to
+</br>
+specify the following information.
+
+<ul>
+<li>The name of the software pacckage you are using</li>
+<li>Any error messages that appered while working with the software</li>
+<li>Steps to reproduce the issue</li>
+<li>Dates and times when the issue occurred</li>
+</ul>
+
+<p>Provide as much unformation as possble to enable us to help
+</br>
+resolve the issue. Tickets are answered in the order they are
+</br>
+received. Generally it will take between two and four hours for
+</br>
+an initial response. If this is an urgent ticket, make sure to check
+</br>
+the "Urgent" check box.
+</p>
+
+<hr/>
+
+<form id=form action='support-submit.cgi' method='get'>
+Your Name: 
+</br> 
+<input type="text"/>
+</br>
+Office: 
+</br> 
+<input type="text"/>
+</br>
+Phone:
+</br>
+<input type="text"/>
+</br>
+Email:
+</br>
+<input type="text"/>
+</br>
+This is URGENT:
+<input type="checkbox"/>
+
+
+<p>Description of issue:</p>
+<textarea rows="12" cols="70">
+</textarea>
+
+
+<input type="button" value='Submit Support Request'>
+</form>
+
+<footer>
+</br>
+Copyright &copy 2012 - Professional Business Associates, Inc
+</footer>
+
+
+</body>
+</html>
